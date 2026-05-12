@@ -10,7 +10,7 @@
     {
       "name": "market-researcher",
       "description": "Deep market research and startup ideation for founders, solopreneurs, and indie hackers. Researches 20–30+ sources, mines community pain points, and produces full reports with validated startup ideas.",
-      "source": "plugins/market-researcher",
+      "source": "./",
       "category": "productivity"
     }
   ]
