@@ -1,0 +1,33 @@
+{
+  "name": "market-researcher",
+  "version": "1.0.0",
+  "description": "Deep market research and startup ideation for founders, solopreneurs, and indie hackers. Researches 20–30+ sources, mines community pain points from Reddit/G2/IH/PH, runs competitive intelligence, and produces full reports with 5–7 validated startup ideas, financial modeling, and validation roadmaps.",
+  "author": {
+    "name": "Rohit Agarwal",
+    "email": "rohitagr2610@gmail.com",
+    "github": "rohitagr0310"
+  },
+  "homepage": "https://github.com/rohitagr0310/my-plugins/tree/main/plugins/market-researcher",
+  "repository": "https://github.com/rohitagr0310/my-plugins",
+  "license": "MIT",
+  "keywords": [
+    "market-research",
+    "startup",
+    "ideation",
+    "saas",
+    "founder",
+    "indie-hacker",
+    "validation",
+    "competitive-analysis",
+    "gap-analysis",
+    "icp",
+    "gtm"
+  ],
+  "skills": [
+    {
+      "name": "market-researcher",
+      "path": "skills/market-researcher",
+      "description": "Full-stack market research and startup ideation skill. Trigger phrases: 'find me a startup idea', 'research this niche', 'is there a market for X', 'what app should I build', 'validate my idea'."
+    }
+  ]
+}
