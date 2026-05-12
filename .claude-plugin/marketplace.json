@@ -1,30 +1,17 @@
 {
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
   "name": "my-plugins",
   "description": "A collection of Claude Code plugins by Rohit Agarwal — productivity tools for founders, solopreneurs, and builders.",
-  "author": {
+  "owner": {
     "name": "Rohit Agarwal",
-    "email": "rohitagr2610@gmail.com",
-    "github": "rohitagr0310"
+    "url": "https://github.com/rohitagr0310"
   },
-  "homepage": "https://github.com/rohitagr0310/my-plugins",
-  "repository": "https://github.com/rohitagr0310/my-plugins",
-  "license": "MIT",
   "plugins": [
     {
       "name": "market-researcher",
-      "path": "plugins/market-researcher",
-      "version": "1.0.0",
       "description": "Deep market research and startup ideation for founders, solopreneurs, and indie hackers. Researches 20–30+ sources, mines community pain points, and produces full reports with validated startup ideas.",
-      "keywords": [
-        "market-research",
-        "startup",
-        "ideation",
-        "saas",
-        "founder",
-        "indie-hacker",
-        "validation",
-        "competitive-analysis"
-      ]
+      "source": "plugins/market-researcher",
+      "category": "productivity"
     }
   ]
 }
