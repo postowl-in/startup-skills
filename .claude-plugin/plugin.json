@@ -1,6 +1,6 @@
 {
-  "name": "market-researcher",
-  "description": "Deep market research and startup ideation for founders, solopreneurs, and indie hackers. Researches 20–30+ sources, mines community pain points from Reddit/G2/IH/PH, runs competitive intelligence, and produces full reports with 5–7 validated startup ideas, financial modeling, and validation roadmaps.",
+  "name": "startup-skills",
+  "description": "A founder's toolkit for Claude Code — market research, startup ideation, and founder-grade decision making. Includes market-researcher (deep research across 20–30+ sources, community pain-point mining, competitive intelligence, validated startup ideas with financial modeling) and founder-mode (first-principles operator thinking: stress tests, competitor gap analysis, decision frameworks, monetization audits, and hiring filters).",
   "author": {
     "name": "Rohit Agarwal",
     "url": "https://github.com/rohitagr0310"

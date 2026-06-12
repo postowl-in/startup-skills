@@ -1,8 +1,6 @@
-# Market Researcher Plugin
+# Startup Skills
 
-Deep market research and startup ideation for founders, solopreneurs, and indie hackers.
-
-Researches 20–30+ sources, mines community pain points, runs competitive intelligence, and produces full reports with validated startup ideas — with financial modeling and validation roadmaps.
+A founder's toolkit for Claude Code — market research, startup ideation, and founder-grade decision making.
 
 ## Skills
 
@@ -22,7 +20,7 @@ A world-class market researcher, competitive analyst, and startup strategist in 
 
 Also triggers proactively when you mention wanting to build a product but haven't validated the market yet.
 
-## Research Modes
+**Research modes:**
 
 | Mode | Searches | Output |
 |------|----------|--------|
@@ -32,43 +30,46 @@ Also triggers proactively when you mention wanting to build a product but haven'
 
 Use "quick check" or "fast scan" for Quick Scan. Use "intensive", "thorough", or "go deep" for Ultra Deep. Everything else defaults to Deep Research.
 
-## What Gets Researched
-
+**What gets researched:**
 - **Community pain points** — Reddit, Indie Hackers, Hacker News, Product Hunt, Twitter
 - **Review mining** — G2, Capterra, Trustpilot, App Store, Alternatives.to
 - **Market intelligence** — Crunchbase, YC, Google Trends, Exploding Topics
 - **SEO & keyword demand** — search volume proxies, competition signals
 - **Adjacent signals** — job postings, course sales, newsletter audiences
 
-## Output
+Every Deep Research run produces a full market research report, 5–7 ranked startup idea cards, and a pre-build validation roadmap for the #1 idea. Reports are saved to `./market-research/` in the current working directory. Reusable output templates live in `skills/market-researcher/templates/`.
 
-Every Deep Research run produces:
+### `founder-mode`
 
-1. **Full market research report** — executive summary, landscape, community pulse, ideas, competitive deep dive
-2. **5–7 ranked startup idea cards** — problem, customer, competitors, opportunity, pricing, financials, risks, moat
-3. **Validation roadmap** — pre-build validation steps for the #1 idea (week-by-week, with copy templates)
+First-principles operator thinking — answers business questions like a founder who has built and exited companies, not a generic advisor. Every response opens with "Here's what I'd actually do", commits to one decision (not a menu), names the trade-offs, and ends with a concrete next-48-hours action.
 
-Reports are automatically saved to `./market-research/` in the current working directory.
+**Trigger phrases** (auto-activates on any of these):
+- "founder mode" / "think like a founder"
+- "stress test my idea / model / pitch"
+- "my competitor is X — how do I beat them"
+- "should I do A or B" (business decisions)
+- "how do I make more money from this" / pricing & monetization questions
+- "I'm hiring my first [role]"
+- "be blunt about my business"
 
-### Gap Types Identified
+**Playbooks:**
 
-The skill identifies 8 gap types: Price, Complexity, Niche, Integration, Speed/Quality, Distribution, Workflow, Modern Stack.
+| Playbook | What it does |
+|----------|--------------|
+| **Stress test** | Series A investor teardown — what breaks first, blind spots, what the top 3% do differently, fundability verdict |
+| **Competitor gap** | Structural weaknesses your competitor *can't* fix, the positioning gap you can own, 3 moves ranked by speed |
+| **Decision** | Kills the decision spiral — reversible vs one-way-door classification, hidden-objective check, a clear call with one flip-condition |
+| **Monetization** | Hidden revenue audit — the leak with a number attached, 3 angles ranked by effort-to-return, a 2-week zero-rebuild test with a kill threshold |
+| **Hiring** | A-player filter — role-specific questions that break rehearsed answers, the month-3 red flag and how to spot it in 30 minutes |
+
+When invoked inside a project, it reads your specs, plans, and docs first and grounds the advice in your actual numbers and constraints.
 
 ## Installation
 
 ```bash
 # Via Claude Code marketplace (GitHub)
-/plugins install https://github.com/rohitagr0310/my-plugins
-```
-
-Or add directly to your Claude Code settings:
-
-```json
-{
-  "plugins": [
-    "https://github.com/rohitagr0310/my-plugins/plugins/market-researcher"
-  ]
-}
+/plugin marketplace add postowl-in/startup-skills
+/plugin install startup-skills@startup-skills
 ```
 
 ## Example Usage
@@ -76,33 +77,23 @@ Or add directly to your Claude Code settings:
 ```
 You: Research the AI writing tools niche — I want to find a gap to build into
 
-Claude: [triggers market-researcher skill, runs 25 searches, returns full report
+Claude: [triggers market-researcher, runs 25 searches, returns full report
          with 6 ranked ideas and a validation roadmap for the top pick]
 ```
 
 ```
-You: Quick check — is there a market for a Notion-to-podcast converter?
+You: Stress test my idea: bulk email tool for small Indian agencies at ₹499/mo
 
-Claude: [Quick Scan mode, 10 searches, focused kill-shot or green-light verdict]
+Claude: [triggers founder-mode stress-test playbook — what breaks first,
+         blind spots, top-3% behaviors, fundability verdict, 48-hour test]
 ```
 
 ```
-You: I want to build something in the legal tech space for solo lawyers
+You: Should I keep self-serve pricing or pivot to done-for-you at 30x the price?
 
-Claude: [auto-triggers market-researcher, clarifies builder profile, runs Deep Research]
+Claude: [triggers founder-mode decision playbook — classifies reversibility,
+         names what you're really optimizing for, makes the call]
 ```
-
-## Templates
-
-The skill ships with reusable output templates in `skills/market-researcher/templates/`:
-
-| File | Purpose |
-|------|---------|
-| `01-full-market-research-report.md` | Full report scaffold |
-| `02-idea-card.md` | Individual idea card format |
-| `03-competitive-matrix.md` | Competitor comparison table |
-| `04-icp-profile.md` | Ideal Customer Profile template |
-| `05-validation-roadmap.md` | Pre-build validation checklist |
 
 ## License
 
